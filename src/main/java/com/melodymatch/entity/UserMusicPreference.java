@@ -2,7 +2,15 @@ package com.melodymatch.entity;
 
 import com.melodymatch.entity.enums.PreferenceType;
 import jakarta.persistence.*;
+import lombok.*;
 
+@Entity
+@Table(name = "user_music_preferences")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class UserMusicPreference {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
